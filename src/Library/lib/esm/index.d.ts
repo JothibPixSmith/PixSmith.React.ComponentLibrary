@@ -1,5 +1,2 @@
-/// <reference types="react" />
-declare const SayHello: ({ name }: {
-    name: string;
-}) => JSX.Element;
-export default SayHello;
+import Button from './Components/Atoms/Button/Button';
+export default Button;
