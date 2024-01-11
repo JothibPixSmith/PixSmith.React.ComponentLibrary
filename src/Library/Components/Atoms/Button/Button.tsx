@@ -1,17 +1,13 @@
 import React from "react";
 import { Button as MButton } from '@mui/material';
+import ButtonProps from "./ButtonProps";
 
-type Props = {
-    onClick: (event: React.MouseEvent<HTMLElement>) => void;
-    children?: React.ReactNode;
-    variant?: 'text' | 'outlined' | 'contained';
-};
-const Button: React.FC<Props> = props => {
+
+const Button: React.FC<ButtonProps> = props => {
 
     return (<MButton onClick={props.onClick}
         variant={props.variant}>
         {props.children}
-        yo
     </MButton>)
 }
 

@@ -43,8 +43,3 @@ yarn.lock
 # Ignored directories
 src/Library/lib
 
-# Ignored file types
-src/Library/**/*.js
-src/Sandbox/**/*.js
-src/Library/**/*.d.ts
-src/Sandbox/**/*.d.ts
