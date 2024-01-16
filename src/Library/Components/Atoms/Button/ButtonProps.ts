@@ -1,7 +1,4 @@
-import { Interactables } from "../BaseAtomProps/BaseAtomProps";
+import { ButtonProps } from "@mui/material";
 
-export default interface Props extends Interactables {
-    onClick: (event: React.MouseEvent<HTMLElement>) => void;
-    children?: React.ReactNode;
-    variant?: 'text' | 'outlined' | 'contained';
+export default interface Props extends ButtonProps {
 };

@@ -1,17 +1,15 @@
 import React from "react";
-import { Button as MButton } from '@mui/material';
+import { Button as MButton, styled } from '@mui/material';
 import ButtonProps from "./ButtonProps";
 
+const Button = styled(MButton)<ButtonProps>((({theme}) => ({
+    
+})));
 
-const Button: React.FC<ButtonProps> = props => {
-
-    return (<MButton onClick={props.onClick}
-        variant={props.variant}>
-        {props.children}
-    </MButton>)
+function StyledComposition(props: ButtonProps){
+return <Button {...props}/>;
 }
 
-
-
-
-export default Button;
+export default function Composition(props: ButtonProps){
+    return StyledComposition(props);
+};

@@ -1,10 +1,19 @@
-import React from "react";
-import { Radio as MRadio } from '@mui/material';
+import * as React from 'react';
+import Radio from '@mui/material/Radio';
 import RadioButtonProps from "./RadioButtonnProps";
+import { styled } from '@mui/material/styles';
 
-const RadioButton: React.FC<RadioButtonProps> = props => {
 
-    return (<MRadio size={props.size} onClick={props.onClick}></MRadio>)
+const RadioButton = styled(Radio)<RadioButtonProps>((({theme}) => ({
+    
+})));
+
+function StyledComposition(props: RadioButtonProps){
+return <RadioButton {...props}/>;
 }
 
-export default RadioButton;
+StyledComposition.muiName = 'Radio';
+
+export default function Composition(props: RadioButtonProps){
+    return StyledComposition(props);
+};
