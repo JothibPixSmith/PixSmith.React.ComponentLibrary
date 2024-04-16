@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
-import {Button, RadioButton, TextBox }from 'component-library';
+import {Button, Label, RadioButton, TextBox }from 'component-library';
+import { Labelbutton } from 'component-library';
 
 function App() {
 
@@ -21,8 +22,17 @@ function App() {
         }}></RadioButton>
       </div>
       <div>
+        <h2>Label</h2>
+        <Label >test</Label>
+      </div>
+      <div>
         <h2>Text Box</h2>
         <TextBox></TextBox>
+      </div>
+      <h1>Molecules</h1>
+      <div>
+        <h2>Button with Label</h2>
+        <Labelbutton LabelText='Label text' ButtonText='Button Text' onClick={() => alert('Label button clicked!')}/>
       </div>
     </div>
     

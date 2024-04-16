@@ -4,7 +4,7 @@ import RadioButtonProps from "./RadioButtonnProps";
 import { styled } from '@mui/material/styles';
 
 
-const RadioButton = styled(Radio)<RadioButtonProps>((({theme}) => ({
+const RadioButton = styled(Radio)<RadioButtonProps>(((_) => ({
     
 })));
 
