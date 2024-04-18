@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css'
-import {Button, Label, RadioButton, TextBox }from 'component-library';
+import { Button, Label, RadioButton, TextBox } from 'component-library';
 import { Labelbutton } from 'component-library';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div>
       <h1>Atoms</h1>
       <div>
-      <h2>Button</h2>
-      <Button onClick={() => alert('click!')} variant='outlined' >test</Button>
+        <h2>Button</h2>
+        <Button onClick={() => alert('click!')} variant='outlined' >test</Button>
       </div>
       <div>
         <h2>Radiobutton</h2>
@@ -29,19 +29,30 @@ function App() {
         <h2>Text Box</h2>
         <TextBox></TextBox>
       </div>
+      <div>
+        <h2>Modal</h2>
+
+      </div>
       <h1>Molecules</h1>
       <div>
         <h2>Button with Label</h2>
-        <Labelbutton LabelText='Label text' ButtonText='Button Text' onClick={() => alert('Label button clicked!')}/>
+        <Labelbutton
+          LabelText='Label text'
+          ButtonText='Button Text'
+          onClick={() => alert('Label button clicked!')} />
+      </div>
+      <div>
+        <h2>Confirmation Dialog</h2>
+
       </div>
     </div>
-    
+
   )
 
 }
 
 const sandboxStateObj = {
-radioButtonValue: false
+  radioButtonValue: false
 }
 
 export default App;
